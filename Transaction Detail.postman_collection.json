@@ -1,0 +1,77 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Transaction Detail",
+		"_postman_id": "9db06707-9372-d090-d51e-c9cb999ae540",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Transactions",
+			"request": {
+				"url": "http://localhost:8000/api/transactions.php",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"invoice_id\" : \"AJHSY13I100121\",\n\t\"item_name\"  : \"MI 10 PRO\",\n\t\"amount\"     : \"1000000\",\n\t\"payment_type\": \"Virtual Account\",\n\t\"customer_name\": \"Post Bro\",\n\t\"merchant_id\" : \"77181001JSGSS\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction Status",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8000/api/transactions.php?references_id=81261525251515&merchant_id=64649119122151",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transactions.php"
+					],
+					"query": [
+						{
+							"key": "references_id",
+							"value": "81261525251515",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "merchant_id",
+							"value": "64649119122151",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"invoice_id\" : \"AJHSY13I100121\",\n\t\"item_name\"  : \"MI 10 PRO\",\n\t\"amount\"     : \"1000000\",\n\t\"payment_type\": \"Virtual Account\",\n\t\"customer_name\": \"Post Bro\",\n\t\"merchant_id\" : \"77181001JSGSS\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
