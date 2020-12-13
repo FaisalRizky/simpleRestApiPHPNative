@@ -8,8 +8,8 @@ Service and Endpoint will listed as below:
 
 | Service | Method |Akses | Description
 | ------ | ------ | ------ | -----
-| Create Transaction | POST | /api/location/create | Service to Create Transaction
-| Get Transaction Status| GET | /api/event/create | Service To Get Transaction Status 
+| Create Transaction | POST | /api/transactions?references_id={id}&merchant_id={id} | Service to Create Transaction
+| Get Transaction Status| GET | /api/transactions | Service To Get Transaction Status 
 
 ### Prequisite
 - Go to Root folder
