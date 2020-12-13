@@ -1,0 +1,15 @@
+{
+    "name": "dans/simple-php",
+    "authors": [
+        {
+            "name": "FaisalRizky",
+            "email": "faisal.rizky@dansmultipro.com"
+        }
+    ],
+    "require": {
+        "robmorgan/phinx": "^0.12.4",
+        "fzaninotto/faker": "^1.9",
+        "vlucas/phpdotenv": "^5.2",
+        "filp/whoops": "^2.9"
+    }
+}
