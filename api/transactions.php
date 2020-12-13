@@ -87,15 +87,15 @@ function createPaymentDetail(){
 						  updated_at='".$date."',
 						  references_id ='".$references_id."'";
 			  if(mysqli_query($connection, $query)){
-				$response=array(
-					'status' => 1,
-					'status_message' =>'Transaction Created Successfully.');
+				$data = [
+					'references_id' => $references_id,
+					'number_va' => $payment_type == "Virtual Account" ? $number_va : '',
+					'status' => "Pending"
+				]; 
+				$response = $helper->sendResponse(1, $data, "Transaction Created Successfully.");
 			  }
 			  else {
-				 $response=array(
-					'status' => 0,
-					'status_message' =>'Transaction Creation Failed.'
-				);
+				 $response = $helper->sendResponse(1, null, "Transaction Creation Failed.");
 			  }
 		  } else { 
 				$response = $helper->sendResponse(1, null, "Please Verify your Data");

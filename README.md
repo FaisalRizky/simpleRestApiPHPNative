@@ -55,7 +55,7 @@ Screenshot https://ibb.co/sq7c1sS
 
 Screenshot 
 GET Postman https://ibb.co/NFhmSVS
-Post Postman https://ibb.co/zVSRdPJ
+Post Postman https://ibb.co/Vj60YLw
 
 GET by Browser Url https://ibb.co/CQszKh4
 Post by CURL command  https://ibb.co/zS5hPgf
@@ -79,5 +79,5 @@ Enviroment used to test
 - MYSQL : 5.0.12
 - Web Server Apache/2.4.43 (Win64) 
 - Using PHP Cli on testing
-- If using webserver Xampp please change url to http://localhost:8000/api/transactions (remove extension .php)
+- If using webserver Xampp please change url to http://localhost:8000/{projectName}/api/transactions (add project name, remove extension .php)
 - Test done in port 8000
